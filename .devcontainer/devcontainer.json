@@ -1,0 +1,11 @@
+{
+  "name": "DK dev env",
+  "build": {
+    "dockerfile": "dockerfile"
+  },
+  "workspaceFolder": "/workspace",
+  "remoteUser": "root",
+  "mounts": [
+    "source=/Users/alessiohamiti/GitHub/RTOS,target=/workspace,type=bind"
+  ]
+}
