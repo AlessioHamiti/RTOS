@@ -1,0 +1,7 @@
+# Create a library instead from auxiliary files to be linked to the main file
+gcc -c fast_trigo.c -o fast_trigo.o
+ar rcs libfast_trigo.a fast_trigo.o
+gcc -o main main.c -L. -lfast_trigo -lm
+
+# Create a Makefile for the whole compiling process
+make
